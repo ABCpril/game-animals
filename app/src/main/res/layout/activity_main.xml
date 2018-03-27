@@ -1,36 +1,56 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bg"
-    tools:context="com.example.a90904.animals.MainActivity">
+    android:layout_margin="0dp"
+    android:background="@drawable/bg">
 
     <TextView
-        android:id="@+id/hellotext"
-        android:layout_width="wrap_content"
-        android:layout_height="30dp"
-        android:fontFamily="04b03"
-        android:text="Hello 人类幼崽!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.17" />
+        android:id="@+id/tv_animals"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/btn_play"
+        android:layout_margin="100dp"
+        android:fontFamily="@font/font_one"
+        android:gravity="center"
+        android:text="Animals"
+        android:textColor="@android:color/white"
+        android:textSize="40sp" />
+
 
     <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
+        android:id="@+id/how_to"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Start"
-        android:orientation="horizontal"
-        android:onClick="btnStart"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="148dp"
-        tools:layout_editor_absoluteY="207dp" />
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="100dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="100dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/selector"
+        android:fontFamily="@font/font_one"
+        android:onClick="btnHowTo"
+        android:text="How To"
+        android:textAllCaps="true"
+        android:textColor="@drawable/text_selector"
+        android:textSize="30sp"
+        android:textStyle="bold" />
 
-</android.support.constraint.ConstraintLayout>
+    <Button
+        android:id="@+id/btn_play"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/how_to"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="100dp"
+        android:background="@drawable/selector"
+        android:fontFamily="@font/font_one"
+        android:onClick="btnStart"
+        android:text="Start"
+        android:textColor="@drawable/text_selector"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>

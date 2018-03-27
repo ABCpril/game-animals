@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Animals.iml" filepath="$PROJECT_DIR$/Animals.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://F:\Kinds of animals\ori_game-animals-huixiaoyang\app\app.iml" filepath="F:\Kinds of animals\ori_game-animals-huixiaoyang\app\app.iml" />
+      <module fileurl="file://F:\Kinds of animals\ori_game-animals-huixiaoyang\game-animals.iml" filepath="F:\Kinds of animals\ori_game-animals-huixiaoyang\game-animals.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ori_game-animals-huixiaoyang.iml" filepath="$PROJECT_DIR$/ori_game-animals-huixiaoyang.iml" />
     </modules>
   </component>
 </project>
